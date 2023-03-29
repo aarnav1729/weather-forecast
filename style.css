@@ -126,7 +126,7 @@ button
 
 footer 
 {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     background-color: linear-gradient(to right, #6776fc, #f0c4c4);
