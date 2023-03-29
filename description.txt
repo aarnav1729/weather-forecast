@@ -1,0 +1,27 @@
+//description.txt - a brief project explanation
+
+Welcome to my Weather Forecast application! 
+
+This is a project I developed using HTML, CSS, and JavaScript, 
+
+which leverages the open weather app API to provide users with up-to-date weather information for their desired location.
+
+Through the integration of this API, my application is able to provide accurate and reliable weather forecasts, showcasing 
+
+my ability to integrate third-party APIs into my projects.
+
+I developed this application to showcase my skills as a web developer, and to provide a useful and practical tool for individuals 
+
+seeking up-to-date weather information. The application is designed with a simple and user-friendly interface, allowing users to 
+
+quickly and easily access the information they need. I take pride in my work, and am committed to delivering high-quality products 
+
+that exceed expectations. I believe that this project demonstrates my ability to develop complex and sophisticated web applications, 
+
+while still maintaining a focus on usability and user experience.
+
+Thank you for taking the time to review my project, and I look forward to hearing from you soon.
+
+Best regards,
+
+Aarnav Singh
