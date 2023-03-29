@@ -22,8 +22,29 @@ while still maintaining a focus on usability and user experience.
 
 Thank you for taking the time to review my project, and I look forward to hearing from you soon.
 
-Contact Information:
+
+//Contact Information:
 
 Email: aarnavsingh836@gmail.com
 
 Phone: 612-842-6315
+
+//app.js - an brief logic explanation
+
+This is a JavaScript file that handles the API request and updates the HTML content of the weather section based on the response from the API.
+
+The API key is stored as a constant variable named API_KEY. It is used to authenticate the API request and is passed as a parameter in the fetch() method.
+
+The code also selects the form and input elements from the HTML page using the querySelector() method and listens for the "submit" event on the form element using the addEventListener() method.
+
+When the form is submitted, the function inside the event listener is executed. The function first prevents the default form submission behavior using preventDefault().
+
+Then, it gets the value entered in the input field and trims it to remove any leading or trailing whitespace.
+
+Next, it uses the fetch() method to make a request to the OpenWeather API, passing in the city name and API key as parameters in the URL.
+
+When the API response is received, the function converts the response data to JSON format using the .json() method and then logs it to the console for debugging purposes.
+
+The function then extracts the relevant weather data from the API response and inserts it into the HTML content of the weather container using template literals and the innerHTML property of the weatherContainer element.
+
+If there is an error in retrieving the weather data, the function catches the error and logs it to the console, and updates the HTML content of the weather container with an error message.
