@@ -34,7 +34,9 @@ body
     margin: 0;
     font-family: sans-serif;
     background: linear-gradient(to right, #6776fc, #f0c4c4);
-    min-height: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
 }
   
 h1 
@@ -124,15 +126,28 @@ button
 
 footer 
 {
-    position: fixed;
+    position: absolute;
     bottom: 0;
+    left: 0;
     background-color: linear-gradient(to right, #6776fc, #f0c4c4);
     color: burlywood;
     width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    box-sizing: border-box;
+} 
+
+footer p 
+{
+    margin: 0;
+}
+  
+footer nav 
+{
+    margin: 0;
 }
   
 footer a 
@@ -146,12 +161,11 @@ footer a:hover
 {
     text-decoration: underline;
 }
-
+  
 @media screen and (max-width: 767px) 
 {
     footer 
     {
-      position: relative;
-      bottom: auto;
+      position: static;
     }
 }
