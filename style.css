@@ -51,7 +51,7 @@ button
     border-radius: 5px;
     border: none;
     background-color: burlywood;
-    color: #fff;
+    color: black;
     cursor: pointer;
     transition: background-color .2s;
 }
