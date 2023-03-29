@@ -1,16 +1,51 @@
+nav 
+{
+    background-color: linear-gradient(to right, #6776fc, #f0c4c4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+  
+nav ul 
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+nav li 
+{
+    padding: 0 1rem;
+}
+  
+nav a 
+{
+    color: burlywood;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+  
 body 
 {
-    
     margin: 0;
     font-family: sans-serif;
     background: linear-gradient(to right, #6776fc, #f0c4c4);
-    min-height: 100%; /* set the minimum height of the body to 100% of the viewport height */
+    min-height: 100%;
 }
-
+  
 h1 
 {
     text-align: center;
     margin: 1rem 0;
+    color: black;
+    border: solid 1px burlywood;
+    padding: 1rem;
+    background-color: linear-gradient(to right, #6776fc, #f0c4c4);
+    border-radius: 10px;
 }
 
 form 
@@ -53,10 +88,6 @@ button
     cursor: pointer;
 }
 
-button:hover 
-{
-    background-color: linear-gradient(to right, #6776fc, #f0c4c4);
-}
 
 #error-message 
 {
@@ -91,27 +122,36 @@ button:hover
     margin-bottom: .5rem;
 }
 
-footer
+footer 
 {
+    position: fixed;
+    bottom: 0;
     background-color: linear-gradient(to right, #6776fc, #f0c4c4);
     color: burlywood;
-    bottom: 0;
-    left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: 1rem;
 }
   
 footer a 
-  {
+{
     color: black;
     text-decoration: none;
+    margin-right: 1rem;
 }
   
 footer a:hover 
 {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) 
+{    
+    footer 
+    {
+      position: relative;
+      bottom: auto;
+    }
 }
