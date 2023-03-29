@@ -1,15 +1,22 @@
-body {
+body 
+{
+    
     margin: 0;
     font-family: sans-serif;
     background: linear-gradient(to right, #6776fc, #f0c4c4);
+    min-height: 100%; /* set the minimum height of the body to 100% of the viewport height */
+    overflow-y: auto; /* enable scrolling */
+    padding-bottom: 6rem; /* add a padding equal to the height of the footer */
 }
 
-h1 {
+h1 
+{
     text-align: center;
     margin: 1rem 0;
 }
 
-form {
+form 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,12 +27,14 @@ form {
     max-width: 50%;
 }
 
-label {
+label 
+{
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
 
-input[type="text"] {
+input[type="text"] 
+{
     width: 100%;
     padding: .5rem;
     font-size: 1.5rem;
@@ -35,29 +44,38 @@ input[type="text"] {
     margin-bottom: 1rem;
 }
 
-button {
+button 
+{
     padding: .5rem 1rem;
     font-size: 1.5rem;
     border-radius: 5px;
     border: none;
-    background-color: #4CAF50;
+    background-color: burlywood;
     color: #fff;
     cursor: pointer;
     transition: background-color .2s;
 }
 
-button:hover {
+button:hover 
+{
     background-color: linear-gradient(to right, #6776fc, #f0c4c4);
 }
 
-#error-message {
+#error-message 
+{
     color: red;
     text-align: center;
     margin: 1rem 0;
     font-size: 1.5rem;
 }
 
-#weather-container {
+#weather-container 
+{
+    display: flex;
+    overflow-y: auto;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem auto;
     padding: 2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,.3);
@@ -65,37 +83,38 @@ button:hover {
     max-width: 50%;
 }
   
-#weather-container h2 {
+#weather-container h2 
+{
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2rem;
 }
   
-#weather-container p {
+#weather-container p 
+{
     font-size: 1.5rem;
     margin-bottom: .5rem;
- }
+}
 
-footer {
-    background-color: linear gradient(to right, #6776fc, #f0c4c4);
-    color: #fff;
-    padding: 1rem;
-    position: absolute;
+footer
+{
+    background-color: linear-gradient(to right, #6776fc, #f0c4c4);
+    color: burlywood;
     bottom: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
- }
+}
   
 footer a 
-{
-    color: #fff;
+  {
+    color: black;
     text-decoration: none;
-    margin-right: 1rem;
- }
+}
   
-footer a:hover {
+footer a:hover 
+{
     text-decoration: underline;
 }
